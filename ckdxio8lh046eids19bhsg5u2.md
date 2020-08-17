@@ -1,9 +1,6 @@
 ## A practical guide to web scraping in Nodejs
 
 
-![franki-chamaki-z4H9MYmWIMA-unsplash.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1597592187852/n0m0Q16Cj.jpeg)
-*<span>Photo by <a href="https://unsplash.com/@franki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Franki Chamaki</a> on <a href="https://unsplash.com/s/photos/data?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*
-
 ## Data has never been so needed and openly accessible as it is today. Why?
 This is because Accurate and up-to-date information drives modern technology, businesses, major decisions,  strategic  approaches to problems, access to resources around you e.t.c
 
