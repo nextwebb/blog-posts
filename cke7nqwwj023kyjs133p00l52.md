@@ -62,7 +62,7 @@ subs_list=[ word[i: j]
     	     for j in range(i + 1, len(word)+1) ] 
 print(subs_list)
 ``` 
-In the above example, a new list is assigned to variable subs_list, as indicated by the square brackets. the expression here, is string slicing method fitted with changing starting and ending indexes, to get all possibilities of the sub-strings from the word "programming".
+In the above example, a new list is assigned to variable subs_list, as indicated by the square brackets. the expression here, is a string slicing method fitted with changing starting and ending indexes, to get all possibilities of the sub-strings from the word "programming".
 Then We call print() function to show the output.
 
 True, you can certainly do all of these operations using traditional  loops 🤷‍♂️. However, not every loop can be rewritten as list comprehension . 
