@@ -70,7 +70,7 @@ But list comprehensions,
 - 
 Can  replace verbose loops and unreadable code with maintainable logic.
 - 
- With its elegant syntax it can increase perfomance as opposed to normal functions that create lists.
+ With its elegant syntax it can increase performance as opposed to normal functions that create lists.
 - 
  It can also be used in combination with normal loops, but avoid making your list comprehension become too large.
 
