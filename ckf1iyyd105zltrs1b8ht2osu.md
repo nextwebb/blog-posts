@@ -18,11 +18,11 @@ I recently needed to implement social login API's for Google and Facebook social
 
 Alas we got the Social Auth API's communicating with the client application 😊 and in this tutorial I will show you how to easily  implement Facebook social login.
 
-**Assumptions.** The reader has some experience with Python, Django Rest Framework and API's. 
+**Assumptions.**  The reader has some experience with Python, Django Rest Framework and API's. 
 
-Integrating a social Authentication to the  server-side of an application requires:
+Integrating social Authentication to the  server-side of an application requires:
 - A selected social authentication provider
-- A  log in request to the social authentication provider
+- A  log-in request to the social authentication provider
 - An authentication token from login, so as to access protected API routes.
 
 Before getting started, 
