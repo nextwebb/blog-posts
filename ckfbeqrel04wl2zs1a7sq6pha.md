@@ -5,6 +5,11 @@
 
 *<span>Photo by <a href="https://unsplash.com/@lazycreekimages?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michael Dziedzic</a> on <a href="https://unsplash.com/s/photos/linux?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*
 
+
+
+
+
+
 Linux runs on a  wide range of hardware. right from large supercomputers to simple wearables .
 
 This operating system makes for very efficient use of a computer's resource and allows for customised  installation processes according to a users specifications and unique hardware requirements.
