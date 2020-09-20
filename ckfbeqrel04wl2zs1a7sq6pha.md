@@ -3,7 +3,7 @@
 
 ![michael-dziedzic-XTblNijO9IE-unsplash.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1600623381443/aldAYDMJJ.jpeg)
 
-*<span>Photo by <a href="https://unsplash.com/@lazycreekimages?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Michael Dziedzic</a> on <a href="https://unsplash.com/s/photos/linux?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*
+
 
 
 
