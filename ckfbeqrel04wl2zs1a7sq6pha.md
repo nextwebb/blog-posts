@@ -12,7 +12,7 @@
 
 Linux runs on a  wide range of hardware. right from large supercomputers to simple wearables .
 
-This operating system makes for very efficient use of a computer's resource and allows for customised  installation processes according to a users specifications and unique hardware requirements.
+This operating system makes for very efficient use of a computer's resources and allows for customised  installation processes according to a users specifications and unique hardware requirements.
 
 A linux installation procedure can be very flexible, and allows users to choose the modules they want to install, thus allowing  Linux to  even run smoothly  on old hardware, this thus helps in optimal use of all the hardware resources.
 
