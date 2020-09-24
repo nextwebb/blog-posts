@@ -13,7 +13,7 @@ We use [AWS EC2 and Heroku (PaaS)](https://rubygarage.org/blog/heroku-vs-amazon-
  to reach different goals,
 which is a subject worth reviewing .  
 
-### A common error with Heroku deploys can be failed database migrations within  your  Heroku Dyno 😞. 
+### A common error with heroku deploys can be failed database migrations within  your  Heroku Dyno 😞. 
 which will be a case that when I run 
 ```
 heroku local web
