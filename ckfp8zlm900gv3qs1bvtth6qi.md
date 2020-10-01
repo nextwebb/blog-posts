@@ -1,6 +1,6 @@
 ## The anxiety of modern developers.
 
-Every year 😃, there’s something new to learn and play with in the web development  space that’s considered something you must use: React, Vue, GraphQL, Docker,Laravel etc. They claim you’ll become a modern developer 🤷‍♂️  .
+Every year 😃, there’s something new to learn and play with in the web development  space that’s considered something you must use: React, Vue, GraphQL, Docker,Laravel etc. They claim you’ll become a modern developer 🤷‍♂️ .
 
 
 
@@ -19,6 +19,6 @@ In our quest for something more modern, we’ve created a mess of developer tool
 
 
 
-** But, this has all made me wonder: has the modern stack killed experimentation, and shipping bad ideas 🤔 ? Do weird experiments and fun ideas die on the floor, tangled in complexity, more often now 😬? I’d hazard a guess that the answer is yes, and that you should probably skip that hipster framework—for now—as well. Just ship something instead.**
+** But, this has all made me wonder: has the modern stack killed experimentation, and shipping bad ideas 🤔 ? Do weird experiments and fun ideas die on the floor, tangled in complexity, more often now 😬? I’d hazard a guess that the answer is yes, and that you should probably skip that hipster framework—for now—as well. Just ship something instead. **
 
 let me know what you all think . drop your comments and reviews below 👇👇
