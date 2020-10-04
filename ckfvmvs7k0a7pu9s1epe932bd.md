@@ -57,7 +57,7 @@ EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
 ![Screenshot from 2020-10-04 20-34-05.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1601841152424/S0IvSgLko.png)
 Don’t forget to add   ```.env```  in your ```.gitignore file``` . to keep your secret keys out of version control.
 
-We've learnt about about Environmental Variables and learnt how to add another level of security to a django application.  It is a necessary step for any truly professional Django project.
+We've learned about Environmental Variables and learned how to add another level of security to a Django application. It is a necessary step for any truly professional Django project.
 
 It's a wrap everyone . 
 
