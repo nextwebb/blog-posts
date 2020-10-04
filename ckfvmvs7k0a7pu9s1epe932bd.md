@@ -11,7 +11,7 @@ These sensitive keys should not be hard-coded in the ```settings.py ``` file or 
 
 Instead, your keys should be loaded up with Environment variables in runtime.
 
-It won't hurt to make our applications one level more secure 😃 and you'll find it quite useful to work with different environments on different stages of application development.
+It won't hurt to make our applications one level more secure 😃 and you'll find it quite useful to work with environments variables on different stages of application development.
 
 ## What are Environmental variables 🤔?
 
