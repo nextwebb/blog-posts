@@ -59,7 +59,7 @@ Don’t forget to add   ```.env```  in your ```.gitignore file``` . to keep your
 
 We've learned about Environmental Variables and learned how to add another level of security to a Django application. It is a necessary step for any truly professional Django project.
 
-It's a wrap everyone . 
+It's a wrap everyone. 
 
 Thanks for the audience and I hope you found this article helpful 🤗. feel free to reach out to [Github](https://github.com/nextwebb), [Twitter](https://twitter.com/i_am_nextwebb) and [LinkedIn](https://www.linkedin.com/in/peterson-oaikhenah-102645144/).
 Do drop a like, comment, and share 😌.
