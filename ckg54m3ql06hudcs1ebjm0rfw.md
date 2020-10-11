@@ -15,7 +15,7 @@ export PATH=$PATH:/snap/bin
 - Installing the cron daemon
 - The Job to be done
 
-Cron is a time-based job scheduling daemon found in Unix-like operating systems, including Linux distributions. Almost every Linux distribution has some form of Cron installed by default. However, if you have a Debian Linux distro without Cron preinstalled, you can install with using the APT package manager.
+Cron is a time-based job scheduling daemon found in Unix-like operating systems, including Linux distributions. Almost every Linux distribution has some form of Cron installed by default. However, if you have a Debian Linux distro without Cron preinstalled, you can install it using the APT package manager.
 
 Before installing any package on a Debian machine, update the computer’s local package database:
 
@@ -98,7 +98,7 @@ crontab -l
 ![Screenshot from 2020-10-11 13-21-32.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1602419070168/8KHzf6mzE.png)
 
 
-It a super-simple way to run scripts on boot using Cron jobs.
+It's a super-simple way to run scripts on boot using Cron jobs.
 
 Thanks for the audience and I hope you found this article helpful 🤗. feel free to reach out to [Github](https://github.com/nextwebb), [Twitter](https://twitter.com/i_am_nextwebb) and [LinkedIn](https://www.linkedin.com/in/peterson-oaikhenah-102645144/).
 Do drop a like, comment, and share 😌.
