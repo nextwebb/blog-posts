@@ -12,7 +12,7 @@ export PATH=$PATH:/snap/bin
 ```
 
 ## Prerequisites
-- Installing the c ron daemon
+- Installing the cron daemon
 - The Job to be done
 
 Cron is a time-based job scheduling daemon found in Unix-like operating systems, including Linux distributions. Almost every Linux distribution has some form of Cron installed by default. However, if you have a Debian Linux distro without Cron preinstalled, you can install with using the APT package manager.
@@ -82,7 +82,7 @@ These are essentially shortcuts for the equivalent numeric schedule specified:
 
 ``` @reboot``` ->  This shorthand will run whatever command follows it any time the server starts up 
 
-Returning back to the subject in question, in my case I want the bash file " filename.sh" to be executed after a startup, within the crontab editor I type:
+Returning back to the subject in question, in my case, I want the bash file ``` filename.sh``` to be executed after a startup, within the crontab editor I type:
 
 ```
  @reboot  /home/nextwebb/Desktop/filename.script 
