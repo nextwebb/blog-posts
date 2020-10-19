@@ -22,7 +22,7 @@ if (file == undefined) {file = false} //prevents errors
 ``` 
 ## Back story
 So this happened to me a while back. It took me a while to debug my code and find the culprit 😈 . Then I figured I returned a promise that made a function call and the data that was being passed was undefined 
-🤦‍♂️. So whenever you write a function that  performs destructuring assignment. RULE OF THUMB. I mean always make sure you set a fallbacks and error checkers.
+🤦‍♂️. So whenever you write a function that  performs destructuring assignment. RULE OF THUMB;  I mean always make sure you set a fallback and error checkers.
 
 ### What is the most elegant way of using it in cases like that or should we use destructuring assignments only for guaranteed non-null objects?
 
