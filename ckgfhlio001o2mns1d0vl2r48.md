@@ -129,14 +129,14 @@ module.exports = retrieveAllUsers
 
 This is a simple implementation of a role-based Authorization or access control on an API.
 
-I want to learn about the awesome projects you build with larger-scale implementations of access control for application  APIs 😃.
+I'd love to learn about the awesome projects you build with larger-scale implementations of access control for application  APIs 😃.
 
 Thanks for the audience and I hope you found this article helpful 🤗. feel free to reach out to [Github](https://github.com/nextwebb), [Twitter](https://twitter.com/i_am_nextwebb) and [LinkedIn](https://www.linkedin.com/in/peterson-oaikhenah-102645144/).
 Do drop a like, comment, and share 😌.
 
 ### Learn more 
 - [Json Web Token](https://www.npmjs.com/package/jsonwebtoken)
-- [ Role Based Authorization in Nodejs Tutorial with Example API ](https://jasonwatmore.com/post/2018/11/28/nodejs-role-based-authorization-tutorial-with-example-api)
+- [ Role-Based Authorization in Nodejs Tutorial with Example API ](https://jasonwatmore.com/post/2018/11/28/nodejs-role-based-authorization-tutorial-with-example-api)
 
 
 
