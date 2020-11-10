@@ -41,7 +41,7 @@ From personal experience, this issue might result from a change to a model and t
 - Run the Heroku shell with the command ```heroku run bash```
 - Run ```python3 manage.py migrate```
 
-That should fix the error. but I would try to avoid resetting the database if I had more data in my tables.
+That should fix the error. 
 
 Thanks for the audience 🤗, I hope this fix saves you a lot of debugging time 😃 . feel free to drop a like, comment, and share 😉. 
 
