@@ -1,4 +1,4 @@
-## When do i use CSRF protection ?
+## When Do I Use CSRF Protection?
 
 The Common network  requests, also termed as HTTP requests include GET and POST.  
 
