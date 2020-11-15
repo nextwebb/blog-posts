@@ -114,7 +114,7 @@ services:
     image: appserver
 # for development purposes, so when we make changes to the source code the change gets saved to the container.
     volumes:
-      - .:/DNA_backend
+      - .:/appserver
     depends_on:
       - db
     ports:
