@@ -93,10 +93,10 @@ services:
     environment:
 # key-value pair for the environmental variable
       - environment:
-          - POSTGRES_USER: "${DATABASE_USER}"
-          - POSTGRES_DB: "${DATABASE_NAME}"
-          - POSTGRES_PASSWORD: "${DATABASE_PASSWORD}"
-          - POSTGRES_HOST: "${DATABASE_HOST}"
+        - "POSTGRES_USER:${DATABASE_USER}"
+        - "POSTGRES_DB:${DATABASE_NAME}"
+        - "POSTGRES_PASSWORD:${DATABASE_PASSWORD}"
+        - "POSTGRES_HOST:${DATABASE_HOST}"
     volumes:
 # no data is lost  when we stop running the container, only for development
       - ./pgdata:/var/lib/postgresql/data
