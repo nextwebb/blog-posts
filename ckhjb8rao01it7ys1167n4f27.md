@@ -72,7 +72,7 @@ The Docker environment variable file ```.env``` is necessary when you're creatin
 So let's say you have your ```.env file``` (that's the full name of the file, by the way) located in the same directory that houses your ```docker-compose.yml file```. In the ```.env file```, you have on these lines: 
 
 ```
-DATABASE_NAME=dbase
+DATABASE_NAME=postgresdb
 DATABASE_USER=postgresuser
 DATABASE_PASSWORD=postgresuser
 DATABASE_HOST=localhost
@@ -128,7 +128,7 @@ We're all set now, lets build and run our container using this simple  command :
 docker-compose up
 ```
 
-That’s a simple  introduction to how application containers can help your team solve many common packaging, distribution, operational problems, and ship better software 
+That’s a simple  introduction to how application containers can help your team solve many common packaging, distribution, and operational problems; while helping you ship better software 
 🤓.
 
 Thanks for the audience and I hope you found this article helpful 🤗. Feel free to reach out to me on  [Github](https://github.com/nextwebb), [Twitter](https://twitter.com/i_am_nextwebb) and [LinkedIn](https://www.linkedin.com/in/peterson-oaikhenah-102645144/).
