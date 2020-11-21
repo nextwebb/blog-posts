@@ -13,7 +13,7 @@ Docker excels in these two key areas:
 > *Docker helps you package and run applications inside isolated little boxes with all platform and application dependencies provided, thus keeping the hosting computer nice and tidy.*
 
 Docker solves problems associated with :
-- Missing or incorrect application dependencies such as libraries, interpreters, code/binaries, users, ubuntu packages, etc 
+- Missing or incorrect application dependencies such as libraries, interpreters, code/binaries, users, Os packages, etc 
 - Conflicts between programs running on the same host machine such as library dependencies or ports; Example: local Django trying to use port 80
 - Insufficient system resources required to run an application such as CPU and memory.
 
@@ -75,7 +75,7 @@ So let's say you have your ```.env file``` (that's the full name of the file, by
 DATABASE_NAME=postgresdb
 DATABASE_USER=postgresuser
 DATABASE_PASSWORD=postgresuser
-DATABASE_HOST=localhost
+DATABASE_HOST=db
 DATABASE_ENGINE=django.db.backends.postgresql
 DATABASE_PORT=5432
 
@@ -118,8 +118,8 @@ services:
     depends_on:
       - db
     ports:
-# expose port 80 to the host machine
-      - "8000:80"
+# expose port 8001 to the host machine
+      - "8001:8000"
 
 ```
 
