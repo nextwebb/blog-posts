@@ -104,7 +104,7 @@ There's a thing as being addicted to programming.  Everything has a cost. Let's 
 
 find a balance between work and life. in the long run, we're not robots. we can get overwhelmed by work, get tired, lose motivation, relationships can suffer and we can burn out. 
 
-It's not healthy that we work so much that we skip meals, rest, and some leisure time we don't stress overwork. Programming can be both mentally and physically exhausting. it's important we strive to rest well, we'll be surprised by how much proper night rest, can lead to a productivity boost at work 😃. 
+It's not healthy that we work so much that we skip meals, rest, and buy out some leisure time we don't stress overwork. Programming can be both mentally and physically exhausting. it's important we strive to rest well, we'll be surprised by how much proper night rest, can lead to a productivity boost at work 😃. 
   
 
 ## You won't know everything.    
