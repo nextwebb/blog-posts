@@ -27,7 +27,7 @@ CASL is small, it’s just ~4.5KB mingzipped and can be even smaller, thanks to 
 
 So while working on a Nodejs application at work; the team spent weeks researching and working on a hybrid access control framework that will be both scalable and dynamically change as the business needs require it.  
 
-Recent developments have shown that attribute-based access control (ABAC) can provide flexible and fine-grained access control in both dynamic distributed systems and enterprise applications. As only the attributes of the subject, object, and environment are considered, most current solutions of typical Role based-access-control (ABAC) schemes cannot scale permissions to resources for a range of users with varied attributes.
+Recent developments have shown that attribute-based access control (ABAC) can provide flexible and fine-grained access control in both dynamic distributed systems and enterprise applications. As only the attributes of the subject, object, and environment are considered, most current solutions of typical Role based-access-control (RBAC) schemes cannot scale permissions to resources for a range of users with varied attributes.
 
 Also in an (ABAC) framework,  the objective attributes are gained or defined by the resources themselves under certain conditions, such as time, location, IP address, and E.T.C. 
 
