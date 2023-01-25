@@ -12,8 +12,7 @@ AWS Step Functions is a service that allows you to create and run workflows that
 
 For example, consider a simple workflow that processes an image file uploaded to an S3 bucket. The workflow could consist of the following steps:
 
-1. First, a Lambda function is triggered by the S3 event and resizes the image.
-    
+1). First, a Lambda function is triggered by the S3 event and resizes the image.
 
 ```python
 import json
@@ -28,8 +27,7 @@ def resize_image(event, context):
     s3.put_object(Bucket=bucket, Key=key, Body=resized_image)
 ```
 
-1. Another Lambda function is triggered by the first one and applies the watermark to the image.
-    
+2). Another Lambda function is triggered by the first one and applies the watermark to the image.
 
 ```python
 import json
@@ -44,8 +42,7 @@ def apply_watermark(event, context):
     s3.put_object(Bucket=bucket, Key=key, Body=watermarked_image)
 ```
 
-1. A final Lambda function that stores the processed image in a different S3 bucket.
-    
+3). A final Lambda function that stores the processed image in a different S3 bucket.
 
 ```python
 import json
