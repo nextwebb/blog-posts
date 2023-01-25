@@ -52,7 +52,7 @@ It is generally good practice to design APIs to be idempotent wherever possible,
     
 2. **Simplifying client code**: If an API endpoint is idempotent, clients can make multiple, indistinguishable requests without having to worry about generating unintended side effects. 💡 This can simplify the client code, as the client does not need to track the system's state or handle potential error cases 💪 .
     
-3. **Improving reliability**: Idempotent APIs are more reliable because clients can retry failed requests without worrying about altering the state of the system. 🔄 For example, consider the following idempotent code for a "transfer funds" endpoint 💰:
+3. **Improving reliability**: Idempotent APIs are more reliable because clients can retry failed requests without worrying about altering the system's state. 🔄 For example, consider the following idempotent code for a "transfer funds" endpoint 💰:
     
     ```javascript
     app.patch("/transfer", (req, res) => {
@@ -69,7 +69,7 @@ It is generally good practice to design APIs to be idempotent wherever possible,
     
     If the client's initial request fails due to a network error, it can retry the request without worrying about transferring the funds multiple times 💻 .
     
-4. **Ensuring consistency**: Idempotent APIs can help ensure data consistency because clients can retry failed requests without altering the state of the system. 💪 For example, consider the following idempotent code for a "create order" endpoint 🛒 :
+4. **Ensuring consistency**: Idempotent APIs can help ensure data consistency because clients can retry failed requests without altering the system's state. 💪 For example, consider the following idempotent code for a "create order" endpoint 🛒 :
     
     ```javascript
     codeapp.post("/orders", (req, res) => {
@@ -86,7 +86,7 @@ It is generally good practice to design APIs to be idempotent wherever possible,
     
     If the client's initial request fails due to a network error, it can retry the request without worrying about creating multiple identical orders 💻 .
     
-5. **Improving performance** means that if a request fails, a client can retry it without any unintended consequences. It can help improve the API's performance by reducing the server's workload and making it more responsive. So if you have an idempotent API, you don't have to worry about duplicate actions or changes to the system's state when you retry a failed request. Pretty cool, right? 🤓
+5. **Improving performance** means that if a request fails, a client can retry it without unintended consequences. It can help improve the API's performance by reducing the server's workload and making it more responsive. So if you have an idempotent API, you don't have to worry about duplicate actions or changes to the system's state when you retry a failed request. Pretty cool, right? 🤓
     
 
 ### Queue systems can help 🤔!
