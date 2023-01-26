@@ -1,4 +1,4 @@
-## A Smart Way To Secure Your Django Apps
+# A Smart Way To Secure Your Django Apps
 
 
 ![cog-wheels-2125183_1280.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1601847853767/eb0QdJfRN.jpeg)
