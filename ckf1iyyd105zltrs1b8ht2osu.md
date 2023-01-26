@@ -1,4 +1,4 @@
-## Setup Social Authentication In Django Rest Framework
+# Setup Social Authentication In Django Rest Framework
 
 With the Global surge in internet users, as well as  people embracing and gaining access to digital products, It's become the goal of many applications to bring the best user experience and retain many guest users. 
 Social Authentication aims at simplifying the login process for visitors, thus leading to a higher conversion rate on user registrations. 
