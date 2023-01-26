@@ -1,4 +1,4 @@
-## Git Submodules: An Ideal Workflow
+# Git Submodules: An Ideal Workflow
 
 Now, I admit - I'm no git expert or even close to that 🤭. But I do appreciate workflows that enable teams achieve excellent results with less effort. 
 The engineers are more engaged and spirited 😁, so they work better to build great products.
