@@ -1,4 +1,4 @@
-## The anxiety of modern developers.
+# The anxiety of modern developers.
 
 Every year 😃, there’s something new to learn and play with in the web development  space that’s considered something you must use: React, Vue, GraphQL, Docker,Laravel etc. They claim you’ll become a modern developer 🤷‍♂️ .
 
