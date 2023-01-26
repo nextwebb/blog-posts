@@ -1,4 +1,4 @@
-## How To Dockerize A Simple Django App
+# How To Dockerize A Simple Django App
 
 ## Introduction
 According to Docker docs, 
