@@ -1,4 +1,4 @@
-## Offline Compatibility With Background Synchronization
+# Offline Compatibility With Background Synchronization
 
 
 
