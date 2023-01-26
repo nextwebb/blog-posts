@@ -1,4 +1,4 @@
-## Debian Linux Distro Will Not Boot On Dell 😩
+# Debian Linux Distro Will Not Boot On Dell 😩
 
 
 ![michael-dziedzic-XTblNijO9IE-unsplash.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1600623381443/aldAYDMJJ.jpeg)
