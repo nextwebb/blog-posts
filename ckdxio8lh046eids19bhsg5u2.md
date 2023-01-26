@@ -1,4 +1,4 @@
-## A practical guide to web scraping in Nodejs
+# A practical guide to web scraping in Nodejs
 
 
 ## Data has never been so needed and openly accessible as it is today. Why?
