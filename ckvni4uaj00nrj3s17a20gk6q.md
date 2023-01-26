@@ -1,4 +1,4 @@
-## Simple queues system in Nodejs 🚀
+# Simple queues system in Nodejs 🚀
 
 Modern applications grow to require expensive processing, asynchronous operations, necessary tasks delays before completions, logging, and triggering processes from initiated application/user events. 
 
