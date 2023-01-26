@@ -1,4 +1,4 @@
-## Concurrency in Golang
+# Concurrency in Golang
 
 
 A typical system is made up of smaller components and sub-systems that all work together.
