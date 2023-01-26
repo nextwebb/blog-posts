@@ -1,4 +1,4 @@
-## Getting started with Prisma ORM for Nodejs
+# Getting started with Prisma ORM for Nodejs
 
 Many things in the tech sound intimidating when you first learn of them than they actually are. ORMs (Object Relational Mappers) are just one of them; we also have quite a number of options for any Nodejs application but I'll share some incites into getting started with Prisma ORM.
 
