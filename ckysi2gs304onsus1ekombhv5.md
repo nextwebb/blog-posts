@@ -1,4 +1,4 @@
-## Creating a Virtual Private Cloud (VPC) with AWS CloudFormation
+# Creating a Virtual Private Cloud (VPC) with AWS CloudFormation
 
 The DevOps process and tooling have continued to evolve, as building on the cloud becomes a growing need for products that require scale and without worrying about physical infrastructure. You only pay for the resources you use such as only paying when your code runs. 
 Simply put; the benefits of the cloud while several include:
