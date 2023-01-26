@@ -59,22 +59,77 @@ def store_image(event, context):
 
 With Step Functions, you can define these steps in a state machine and have them executed in the specified order, with error handling and retries built-in. This can significantly simplify the development process and make it easier to manage the application.
 
-The Chalice framework is a Python library for building serverless applications on AWS. It provides a simple, intuitive way to define and deploy Lambda functions and configure the associated resources, such as API Gateway endpoints and IAM roles. Chalice makes it easy to start serverless development, as it abstracts away many of the complexities of working with AWS services directly.
+Here is an example of a state machine for the Step Functions workflow:
 
-For example, the following code sample shows how to define a simple RESTful API using Chalice:
-
-```python
-from chalice import Chalice
-
-app = Chalice(app_name='image-processor')
-
-@app.route('/process', methods=['POST'])
-def process_image():
-    # code to process image and return response
-    return {'status': 'success'}
+```json
+{
+"Comment": "A simple workflow that processes an image file uploaded to an S3 bucket",
+"StartAt": "Resize Image",
+"States": {
+  "Resize Image": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:resize_image",
+    "Next": "Apply Watermark"
+  },
+  "Apply Watermark": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:apply_watermark",
+    "Next": "Store Image"
+  },
+  "Store Image": {
+    "Type": "Task",
+    "Resource": "arn:aws:lambda:REGION:ACCOUNT_ID:function:store_image",
+    "End": true
+  }
+}
+}
 ```
 
-Python also provides built-in support for asynchronous programming through the async and await keywords. This allows you to write non-blocking code handling multiple tasks simultaneously, rather than waiting for one task to complete before starting the next. For example, the following code sample shows how to use async and await to download two files concurrently:
+The Chalice framework is a Python library for building serverless applications on AWS. It provides a simple, intuitive way to define and deploy Lambda functions and configure the associated resources, such as API Gateway endpoints and IAM roles. Chalice makes it easy to start serverless development, as it abstracts away many of the complexities of working with AWS services directly.
+
+Here is an example of how the same example can be coordinated/invoked within Chalice and Python async methods:
+
+```python
+from chalice import Chalice, Response
+import json
+import boto3
+import asyncio
+
+app = Chalice(app_name='image-processing')
+s3 = boto3.client('s3')
+
+@app.lambda_function()
+def resize_image(event, context):
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    key = event['Records'][0]['s3']['object']['key']
+    # code to resize image
+    s3.put_object(Bucket=bucket, Key=key, Body=resized_image)
+    apply_watermark.apply(event, context)
+
+@app.lambda_function()
+async def apply_watermark(event, context):
+    await asyncio.sleep(1)
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    key = event['Records'][0]['s3']['object']['key']
+    # code to apply watermark
+    s3.put_object(Bucket=bucket, Key=key, Body=watermarked_image)
+    store_image.apply(event, context)
+    
+@app.lambda_function()
+async def store_image(event, context):
+    await asyncio.sleep(1)
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    key = event['Records'][0]['s3']['object']['key']
+    # code to get the processed image
+    s3.put_object(Bucket='processed-images', Key=key, Body=processed_image)
+```
+
+In the above example, the `resize_image` function is invoked by the S3 event, and once it completes the execution, the apply\_watermark function is called, and the same goes for the last function. Chalice framework handles the invocation of these functions and orchestrates them together.
+
+  
+Python also provides built-in support for asynchronous programming through the async and await keywords. This allows you to write non-blocking code handling multiple tasks simultaneously, rather than waiting for one task to complete before starting the next.  
+  
+For example, the following code sample shows how to use async and await to download two files concurrently:
 
 ```python
 import aiohttp
