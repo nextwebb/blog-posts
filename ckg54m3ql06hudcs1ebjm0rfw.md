@@ -1,4 +1,4 @@
-## How to Automate tasks in Linux
+# How to Automate tasks in Linux
 
 ## Introduction
 
