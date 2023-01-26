@@ -1,4 +1,4 @@
-## How to find the longest substring without duplicates in characters - Python solution
+# How to find the longest substring without duplicates in characters - Python solution
 
 
 ![sebastian-herrmann-oMpknr7yi7g-unsplash.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1598825976956/UzRwboHQd.jpeg)
