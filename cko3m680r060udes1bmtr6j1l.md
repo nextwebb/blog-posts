@@ -1,4 +1,4 @@
-## Things I Wish I knew When I Started Coding
+# Things I Wish I knew When I Started Coding
 
 Hi, I'm Nextwebb 👋... I wrote my first line of code 4years ago and since then it's totally changed my life.
 
