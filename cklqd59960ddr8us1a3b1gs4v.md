@@ -1,4 +1,4 @@
-## Scaleable Authorization Management Made Easy With CASL.JS 😀
+# Scaleable Authorization Management Made Easy With CASL.JS 😀
 
 ## Introduction 
 [CASL.JS](https://casl.js.org/v5/en/) at its core is an Isomorphic Authorization
