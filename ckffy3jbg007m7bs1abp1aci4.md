@@ -1,4 +1,4 @@
-## How to Fix failed Django  database migrations on Heroku --- Programming error
+# How to Fix failed Django  database migrations on Heroku --- Programming error
 
 
 ![heroku_share.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1600873409753/tKIYofd2p.png)
