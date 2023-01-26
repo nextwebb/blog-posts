@@ -6,6 +6,17 @@
 
 When it comes to building serverless applications, several options are available for coordinating and executing tasks. AWS Step Functions and the Chalice framework are two popular choices, but Python also provides built-in support for asynchronous programming through the async and await keywords. In this article, we will compare these three options and explore when to use each one to build scalable and maintainable serverless applications using Python.
 
+### Prerequisites
+
+This article assumes that you have the following:
+
+* Some essential knowledge of Python
+    
+* Know what is AWS step functions and lambda
+    
+* Are you familiar with serverless applications
+    
+
 ### Discussions
 
 AWS Step Functions is a service that allows you to create and run workflows that coordinate multiple AWS services, such as Lambda functions, DynamoDB tables, and SQS queues. These workflows, known as state machines, are defined using the JSON-based Amazon States Language. Step Functions provides a powerful way to visualize and understand the flow of your application, which can help with troubleshooting and debugging. However, it does add a layer of complexity, as you need to manage the state machine and its associated resources.
@@ -57,9 +68,12 @@ def store_image(event, context):
     s3.put_object(Bucket='processed-images', Key=key, Body=processed_image)
 ```
 
+### Using step functions
+
+  
 With Step Functions, you can define these steps in a state machine and have them executed in the specified order, with error handling and retries built-in. This can significantly simplify the development process and make it easier to manage the application.
 
-Here is an example of a state machine for the Step Functions workflow:
+Here is an example of a simple state machine for the Step Functions workflow:
 
 ```json
 {
@@ -85,7 +99,15 @@ Here is an example of a state machine for the Step Functions workflow:
 }
 ```
 
-The Chalice framework is a Python library for building serverless applications on AWS. It provides a simple, intuitive way to define and deploy Lambda functions and configure the associated resources, such as API Gateway endpoints and IAM roles. Chalice makes it easy to start serverless development, as it abstracts away many of the complexities of working with AWS services directly.
+The first code block is an example of a state machine for the Step Functions workflow. It defines a simple workflow that processes an image file uploaded to an S3 bucket.  
+The workflow consists of three steps: "Resize Image", "Apply Watermark", and "Store Image". Each step is represented by a state in the state machine and is executed in the specified order.
+
+### Using Chalice and python Async methods
+
+  
+The Chalice framework is a Python library for building serverless applications on AWS. It provides a simple, intuitive way to define and deploy Lambda functions and configure the associated resources, such as API Gateway endpoints and IAM roles.  
+  
+Chalice makes it easy to start serverless development, as it abstracts away many of the complexities of working with AWS services directly.
 
 Here is an example of how the same example can be coordinated/invoked within Chalice and Python async methods:
 
@@ -126,43 +148,23 @@ async def store_image(event, context):
 
 In the above example, the `resize_image` function is invoked by the S3 event, and once it completes the execution, the apply\_watermark function is called, and the same goes for the last function. Chalice framework handles the invocation of these functions and orchestrates them together.
 
-  
-Python also provides built-in support for asynchronous programming through the async and await keywords. This allows you to write non-blocking code handling multiple tasks simultaneously, rather than waiting for one task to complete before starting the next.  
-  
-For example, the following code sample shows how to use async and await to download two files concurrently:
+🤓 If you're looking to build a serverless application using Python, you have several options! One popular option is AWS Step Functions, which allows you to easily coordinate multiple AWS services and simplify the development process for complex applications. Another option is the Chalice framework, which provides a simple and intuitive way to define and deploy Lambda functions and configure resources such as API Gateway endpoints and IAM roles.
 
-```python
-import aiohttp
-import asyncio
+💻 But perhaps the most exciting option is using Python's built-in support for asynchronous programming through the async and await keywords. This allows you to write non-blocking code, handling multiple tasks simultaneously, rather than waiting for one task to complete before starting the next. You have more control over the flow of your application and can take advantage of built-in libraries such as ```asyncio``` and ```aiohttp```. However, it requires more expertise and experience with asynchronous programming, and you will need to handle things like scaling and error handling yourself.
 
-async def download_file(url):
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
-            return await response.text()
+🤔 Ultimately, the best choice will depend on the specific requirements of your application and your team's expertise. The Chalice framework may be the best choice if you build a simple application and want to start quickly. If you need more control over the flow of your application and are comfortable with asynchronous programming, then Python async methods may be a better fit. If you are building a complex application with multiple steps and decision points, AWS Step Functions can help simplify the development process.
 
-async def main():
-    file1 = asyncio.ensure_future(download_file("http://example.com/file1"))
-    file2 = asyncio.ensure_future(download_file("http://example.com/file2"))
-    print(await file1)
-    print(await file2)
+💡 It's also worth noting that these three approaches are not mutually exclusive, and you can combine them to build more complex applications. For example, you could use Step Functions to coordinate the flow of your application and use Chalice and Python async methods to handle the logic of your application.
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
-```
-
-When using Python async methods, you have more control over the flow of your application and can take advantage of built-in libraries such as `asyncio` and `aiohttp`. However, it also requires more expertise and experience with asynchronous programming, and you will need to handle things like scaling and error handling yourself.
-
-In terms of determining which approach to use, it ultimately depends on the specific requirements of your application and your team's expertise. The Chalice framework may be the best choice if you build a simple application and want to start quickly. If you need more control over the flow of your application and are comfortable with asynchronous programming, then Python async methods may be a better fit. If you are building a complex application with multiple steps and decision points, AWS Step Functions can help simplify the development process.
-
-Also worth noting is that these three approaches are not mutually exclusive, and you can use them in combination to build more complex applications. For example, you could use Step Functions to coordinate the flow of your application and use Chalice and Python async methods to handle the logic of your application.
-
-In summary, several options are available when building serverless applications using Python, including AWS Step Functions, the Chalice framework, and Python async methods. Each approach has its own set of benefits and drawbacks, and the best choice will depend on the specific requirements of your application and your team's expertise. However, by understanding the strengths and weaknesses of each approach, you can make an informed decision and build scalable and maintainable serverless applications.
+🚀 So, what are you waiting for? Take the first step towards building your dream serverless application using Python today! 🚀
 
 ### Conclusion
 
-In this article, we have compared three different options for building serverless applications using Python: AWS Step Functions, the Chalice framework, and Python async methods. In addition, we have provided examples and code snippets to illustrate the concepts. By understanding the strengths and weaknesses of each approach, you can make an informed decision and build scalable and maintainable serverless applications.
+Building serverless applications with Python is a breeze with AWS Step Functions, the Chalice framework, and Python async methods. Each of these tools has its unique strengths and can be used to achieve different goals.
 
-Thank you for reading this article! I hope you found it helpful 🤓. If you have any questions or want to learn more, feel free to reach out to me on [**GitHub**](https://github.com/nextwebb), [**Twitter**](https://twitter.com/iam_nextwebb), and [**LinkedIn**](https://www.linkedin.com/in/peterson-oaikhenah-102645144/). Also, don't forget to give this article a like, leave a comment, and share it with your network 😊 .
+AWS Step Functions makes it super simple to coordinate and execute multiple Lambda functions in a specific order. At the same time, the Chalice framework takes the complexity out of deploying and configuring Lambda functions and other resources. With Python async methods, you can build ultra-efficient and scalable applications that can handle high levels of concurrency. Whether you're just getting started with serverless or are a seasoned pro, these tools are the perfect choice for your next project! So what are you waiting for? Give them a try and see the magic for yourself 🤩🚀.
+
+Don't hesitate to reach out to me on [**GitHub**](https://github.com/nextwebb), [**Twitter**](https://twitter.com/iam_nextwebb), and [**LinkedIn**](https://www.linkedin.com/in/peterson-oaikhenah-102645144/) if you have any questions or want to learn more. And don't forget to give a thumbs up, leave a comment and share this article with your network 😊.
 
 ### References
 
