@@ -50,7 +50,7 @@ Here are the steps we will take:
     
     ```yaml
     pythonCopy codeprovider "aws" {
-      region = "us-west-2"
+      region = "us-east-1"
     }
     ```
     
@@ -174,14 +174,13 @@ Here are the steps we will take:
            target_label: load_balancer
          - source_labels: [__meta_ec2_private_ip]
            target_label: ip
- 
 ```
 
 This configuration file specifies two scrape jobs: one for EC2 instances and one for load balancers. The EC2 job uses EC2 service discovery to dynamically discover all running instances and scrape their metrics using the Node Exporter on port 9100.
 
 The load balancer job filters by instances with a Component tag set to LoadBalancer.
 
-Next, let's create an Ansible playbook to install and configure Prometheus on our EC2 instances. We'll create a file named `prometheus.yml` in the same directory as our `site.yml` playbook.
+Next, let's create an Ansible playbook to install and configure Prometheus on our EC2 instances. We'll create a file named `playbook.yml` in the same directory as our `site.yml` playbook.
 
 1. Create a new Ansible playbook in a file named `playbook.yml` that installs and configures Prometheus:
     
