@@ -214,7 +214,7 @@ Next, let's create an Ansible playbook to install and configure Prometheus on ou
     ansible-playbook -i inventory.ini site.yml
     ```
     
-3. Run the `prometheus.yml` playbook to install and configure Prometheus:
+3. Run the `playbook.yml` playbook to install and configure Prometheus:
     
     ```bash
     ansible-playbook -i inventory.ini playbook.yml
