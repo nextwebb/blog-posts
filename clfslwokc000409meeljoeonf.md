@@ -61,8 +61,7 @@ AWS Glue is a fully-managed extract, transform, and load (ETL) service that enab
 }
 ```
 
-###   
-🌩️ Using EventBridge with AWS Step Functions
+### 🌩️ Using EventBridge with AWS Step Functions
 
 AWS Step Functions is a fully-managed service that enables you to coordinate multiple AWS services into serverless workflows. You can use EventBridge to trigger Step Functions workflows when specific events occur in your AWS environment.
 
@@ -118,7 +117,7 @@ In conclusion, choosing between CloudWatch Events and EventBridge depends on the
 
 Remember to follow best practices and optimize your event-driven workflows for performance and scalability. By choosing exemplary event-driven service and best practices, you can build scalable and resilient applications on AWS.
 
-If you have any inquiries or wish to gain additional knowledge, please get in touch with me on GitHub, Twitter, and LinkedIn. Moreover, kindly show your support by leaving a thumbs up 👍, a comment 💬, and sharing this article with your network 😊.
+If you have any inquiries or wish to gain additional knowledge, please get in touch with me on [GitHub](https://github.com/nextwebb), [Twitter](https://twitter.com/iam_nextwebb), and [LinkedIn](https://www.linkedin.com/in/peterson-oaikhenah-102645144/). Moreover, kindly show your support by leaving a thumbs up 👍, a comment 💬, and sharing this article with your network 😊.
 
 ### References:
 
