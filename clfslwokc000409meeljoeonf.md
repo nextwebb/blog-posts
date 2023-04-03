@@ -79,11 +79,7 @@ AWS Step Functions is a fully-managed service that enables you to coordinate mul
 }
 ```
 
-### 🔍 Prerequisites and Best Practices from the community
-
-AWS Step Functions is a fully-managed service that enables you to coordinate multiple AWS services into serverless workflows. In addition, you can use EventBridge to trigger Step Functions workflows when specific events occur in your AWS environment.
-
-### 🔍 Prerequisites and Best Practices from the community
+### 🔍 Prerequisites and Best Practices
 
 Before using CloudWatch Events or EventBridge with Glue jobs or Step Functions, consider the following prerequisites and best practices:
 
